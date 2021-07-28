@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--CSS-->
+  <link rel="stylesheet" href="./index.css">
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <section class="register">
+    <div class="article">
+      <article>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p>
+      </article>
+    </div>
+
+    <div class="register-div">
+      <div class="trial">
+        <p><strong>Try it free 7 day</strong>s then $20/mo. thereafter</p>
+      </div>
+
+      <form action="">
+        <fieldset id="fullName">
+          <label for="firstNameForm">first name</label>
+          <input type="text" name="firstName" id="firstNameForm" placeholder="First Name" required/>
+
+          <label for="">LastName</label>
+          <input type="text" name="LastName" id="lastNameForm" placeholder="Last Name" required>
+        </fieldset>
+
+        <fieldset id="loginSection">
+          <label for="emailForm">your email</label>
+          <input type="email" name="email" id="emailForm" placeholder="Email Address" required>
+
+          <label for="">your password</label>
+          <input type="password"  placeholder=" Password" required/>
+        </fieldset>
+
+        <footer>
+          <input type="submit" value="Claim your free trial" required>
+          <legend>By clicking the button, you are agreeing to our <a href="https://www.google.com">Terms and Services</a> </legend>
+        </footer>
+        
+      </form>
+    </div>
+  </section>
+</body>
+</html>
+
+<!--https://pt.stackoverflow.com/questions/320042/estilizar-required--> 

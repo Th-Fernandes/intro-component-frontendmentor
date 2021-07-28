@@ -1,0 +1,190 @@
+/* ===  GLOBAL === */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    --shadow: 0px 3px 5px 1.5px rgba(0, 0, 0, 0.329);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+fieldset {
+    border: none;
+}
+/* ===  REGISTER SECTION === */
+/* == ARTICLE DIV == */
+section.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: min(180rem, 90%);
+    font-size: 1.6rem;
+}
+
+section.register  .article {
+    width: 55rem;
+}
+
+section.register  .article > article {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+section.register .article article > h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    width: 100%;
+    margin-bottom: 3rem;
+
+ 
+}
+
+section.register .article article > p {
+    font-weight: 500;
+    opacity: .8;
+    line-height: 1.8;
+}
+/* == REGISTER DIV == */
+/* = TRIAL DIV = */
+section.register .register-div .trial {
+    background: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+
+    text-align: center;
+
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+}
+/* = FORM = */
+section.register .register-div form {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    height: 40rem;
+    width: min(60rem,100%);
+}
+
+section.register .register-div form  fieldset > input {
+    display: block;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+
+    color: hsl(249, 10%, 26%);
+
+    border: hsl(246, 25%, 77%) solid 1px;
+    border-radius: 8px;
+}
+
+section.register .register-div form  fieldset > input::placeholder {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+section.register .register-div form footer {
+    text-align: center;
+}
+
+section.register .register-div form footer > input {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 0;
+    margin: 2rem 0;
+    border: none;
+
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    
+}
+
+section.register .register-div form footer > input:hover {
+    background:hsl(154, 59%, 61%);
+    transition: .5s all;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+section.register .register-div form footer > legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: hsl(246, 25%, 77%);
+}
+
+section.register .register-div form footer > legend a {
+    text-decoration: none;
+    color:  hsl(0, 100%, 74%) ;
+}
+/* ====== RESPONSIVE ================================================================================== */
+@media (max-width: 425px) and (orientation: portrait) {
+    /* REGISTER SECTION */
+    section.register {
+        flex-wrap: wrap;
+    }
+    /* == REGISTER DIV == */
+    /* = TRIAL DIV = */
+    section.register .register-div .trial {
+        height: 10rem;
+        margin-top: 5rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    section.register .register-div {
+        width: 100%;
+    }
+
+    section.register .article article > h1{
+        font-size: 3.2rem;
+    }
+   
+    section.register .article article > h1,
+    section.register .article article > p{
+        text-align: center;
+    }
+
+}
